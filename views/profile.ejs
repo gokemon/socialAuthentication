@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- load bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- load fontawesome -->
+    <link rel="stylesheet" type="text/css" href="css/viewStyles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header text-center">
+            <h1><span class="fa fa-user" aria-hidden="true"></span>Profile Page</h1>
+            <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        </div>
+
+        <div class="row">
+            <!-- LOCAL INFORMATION -->
+            <div class="col-sm-6">
+                <div class="well">
+                    <h3><span class="fa fa-user-circle" aria-hidden="true"></span> Local</h3>
+                    <p>
+                        <strong>id</strong>:
+                        <%= user._id %><br>
+                            <strong>email</strong>:
+                            <%= user.local.email %><br>
+                                <strong>password</strong>:
+                                <%= user.local.password %>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end Local -->
+    </div>
+</body>
+
+</html>

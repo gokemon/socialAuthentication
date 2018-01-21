@@ -3,21 +3,18 @@
 
 <head>
     <title>Social Login</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- load bootstrap css -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- load fontawesome -->
-    <style>
-        body {
-            padding-top: 80px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/viewStyles.css" />
 </head>
 
 <body>
     <div class="container">
         <div class="col-sm-6 col-sm-offset-3">
-            <h1><span class="fa fa-sign-in"></span> Login</h1>
+            <h1><span class="fa fa-sign-in" aria-hidden="true"></span> Login</h1>
 
             <!-- show any messages that come back with authentication -->
             <% if (message.length > 0) { %>
