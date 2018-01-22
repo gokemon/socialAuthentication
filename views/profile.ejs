@@ -18,8 +18,8 @@
             <a href="/logout" class="btn btn-default btn-sm">Logout</a>
         </div>
 
+        <!-- LOCAL INFORMATION -->
         <div class="row">
-            <!-- LOCAL INFORMATION -->
             <div class="col-sm-6">
                 <div class="well">
                     <h3><span class="fa fa-user-circle" aria-hidden="true"></span> Local</h3>
@@ -35,7 +35,29 @@
             </div>
         </div>
         <!-- end Local -->
+
+
+        <!-- FACEBOOK INFORMATION -->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="well">
+                    <h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h3>
+                    <p>
+                        <strong>id</strong>:
+                        <%= user.facebook.id %><br>
+                            <strong>token</strong>:
+                            <%= user.facebook.token %><br>
+                                <strong>email</strong>:
+                                <%= user.facebook.email %><br>
+                                    <strong>name</strong>:
+                                    <%= user.facebook.name %>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end Facebook -->
     </div>
+    <!-- end page container -->
 </body>
 
 </html>
